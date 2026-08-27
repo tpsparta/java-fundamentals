@@ -1,4 +1,4 @@
-package com.sparta.people;
+package com.sparta.abstractinterface;
 
 public abstract class Person {
 
@@ -10,14 +10,6 @@ public abstract class Person {
         this.lastName = lastName;
     }
 
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
     public String getFirstName() {
         return firstName;
     }
@@ -26,5 +18,16 @@ public abstract class Person {
         this.firstName = firstName;
     }
 
-    public abstract void delete();
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void delete() {
+        System.out.println("Person del");
+    }
+
 }

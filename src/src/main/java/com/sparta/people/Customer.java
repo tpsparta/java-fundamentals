@@ -8,4 +8,9 @@ public class Customer extends Person {
         super(firstName, lastName);
         this.deliveryAddress = deliveryAddress;
     }
+
+    @Override
+    public void delete() {
+
+    }
 }
