@@ -26,5 +26,9 @@ public abstract class Person {
         this.firstName = firstName;
     }
 
+    @Override public String toString() {
+        return this.firstName + " " + this.lastName;
+    }
+
     public abstract void delete();
 }
